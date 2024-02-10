@@ -2,7 +2,7 @@
 Author: auhjin auhjin_ai8@163.com
 Date: 2024-02-09 22:56:49
 LastEditors: auhjin auhjin_ai8@163.com
-LastEditTime: 2024-02-10 22:57:14
+LastEditTime: 2024-02-10 23:23:42
 FilePath: \QAforum\app.py
 Description: 
 
@@ -30,6 +30,9 @@ app.config['SQLALCHEMY_DATABASE_URI'] = f'mysql+pymysql://{Username}:{Password}@
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 # ORM 模型映射
+# flask db init
+# flask db migrate
+# flask db upgrade
 
 # with app.app_context():
 #     with db.engine.connect() as conn:
